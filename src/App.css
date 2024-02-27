@@ -1,0 +1,155 @@
+.mainContent {
+	width: 70%;
+	overflow: hidden;
+}
+
+.playerScore {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	height: 10%;
+	min-height: 50px;
+}
+.playerScoreBlock {
+}
+.score {
+}
+
+.coinImg {
+	height: 15px;
+}
+
+.question {
+	height: 20%;
+	min-height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.questionText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.questionArea {
+	font-size: 1.3em;
+	margin-top: 0;
+}
+
+.cancelBtn,
+.bulb {
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+	height: 29px;
+	box-shadow: 0px 3px rgb(121, 121, 121);
+}
+.cancelBtn:hover,
+.bulb:hover {
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.visual {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+}
+
+.answersBlock {
+	background-color: #dbdbdb;
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.btn {
+	border: none;
+	border-radius: 5px;
+	height: 28px;
+	box-shadow: 0px 5px rgb(121, 121, 121);
+}
+.btn:hover {
+	cursor: pointer;
+	transform: translateY(-3px);
+	transition: transform 0.6s;
+}
+.btn:focus {
+	box-shadow: none;
+}
+.btn-variant {
+	background-color: #f7f7f7;
+	width: 26%;
+	min-width: 130px;
+}
+.btn-check {
+	background-color: #bebebe;
+	width: 10%;
+	min-width: 48px;
+}
+
+.popapTrue{
+
+	position: absolute;
+	top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+
+	border-radius: 10px;
+background-color: #1da72d;
+}
+
+.popapFalse{
+
+	position: absolute;
+	top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+
+	border-radius: 10px;
+background-color: #ee7878;
+}
+
+
+
+
+@media (max-width: 520px) {
+	.mainContent {
+		width: 100%;
+	}
+}
+
+@media (max-width: 460px) {
+	.answersBlock {
+		flex-direction: column;
+		height: 100px;
+	}
+	.btn {
+		margin: 5px;
+		width: 50%;
+	}
+	.taskImg {
+		max-width: 150%;
+	}
+	.visual {
+		height: 30%;
+	}
+}
